@@ -1,0 +1,293 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+variables */
+
+:root {
+  --blue: #b4d0e7;
+  --white: #ffffff;
+}
+
+/* section ------------------------------------------------------ */
+
+/* Do questa classe a tutte le sezioni, al footer, all'header */
+
+.section {
+  width: 100%;
+  height: fit-content;
+
+  /* margin: 150px 0px; */
+
+  /* border: 1px solid black; */
+}
+
+.s-1 {
+  height: fit-content;
+}
+
+/* / section ------------------------------------------------------ */
+
+/* text */
+
+.big-title {
+  font-size: 5rem;
+}
+/* text */
+
+/*wrapper ------------------------------------------------------ */
+
+/* nota per il me del futuro.
+Mi piace l'idea di avere una classe STANDARD che definisce lo stile di un gruppo di elementi.
+E a seguire delle classi 'MODIFIER', ovvero delle variazioni dello STANDARD, 
+che cambiano specifiche proprietà di un elemento lasciando inalterate le altre. */
+
+/* STANDARD */
+.wrapper-standard {
+  width: 1000px;
+  margin: 0 auto;
+
+  height: fit-content;
+  /*   background-color: aquamarine; */
+}
+
+.wrapper--plus {
+  width: 1300px;
+}
+
+/* /wrapper ------------------------------------------------------ */
+
+header {
+  height: 80px;
+
+  padding: 0px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .block-left,
+header .block-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 40px;
+}
+
+/* /s-1 ------------------------------------------------------ */
+
+#s-1 {
+  position: relative;
+}
+
+#s-1 .block {
+  display: flex;
+}
+
+#s-1 .background {
+  background-color: var(--blue);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 80%;
+
+  z-index: -10;
+}
+
+#s-1 .block__1 {
+  width: 50%;
+}
+
+#s-1 .block__2 > img {
+  width: 90%;
+}
+/* /s-1 ------------------------------------------------------ */
+
+#s-2 .block-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+
+  height: fit-content;
+  width: 100%;
+}
+
+.block-up__card {
+  width: calc(100% / 3);
+
+  height: 700px;
+  background-color: aqua;
+}
+
+#s-2 .block-down {
+  width: 100%;
+
+  margin-top: 10px;
+
+  height: 150px;
+  background-color: rgb(214, 43, 149);
+}
+
+#s-3 .wrapper-standard {
+  display: flex;
+  height: 100%;
+}
+
+#s-3 {
+  height: 500px;
+}
+
+#s-3 .block-right {
+  width: 30%;
+  height: 100%;
+}
+
+#s-3 .block-left {
+  width: 70%;
+  height: 100%;
+  background-image: url(./dropbox_img/img/partner.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* s-4 ------------------------------------------------------ */
+#s-4 {
+  height: fit-content;
+  background-color: aqua;
+}
+
+#s-4 .card-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+#s-4 .card-box {
+  width: calc(100% / 3 - 10px);
+}
+
+#s-4 .card-box img {
+  width: 100%;
+}
+
+/* /s-4 ------------------------------------------------------ */
+
+/* s-5 ------------------------------------------------------ */
+#s-5 .square-container {
+  width: 100%;
+
+  background-color: aqua;
+
+  display: flex;
+}
+
+#s-5 .square-box {
+  width: calc(100% / 3);
+  aspect-ratio: 4/4;
+
+  background-color: blue;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#s-5 .square-box * {
+  width: calc(100% / 2);
+  aspect-ratio: 4/4;
+  background-color: aquamarine;
+}
+
+/* /s-5 ------------------------------------------------------ */
+
+/* s-6 ------------------------------------------------------ */
+
+#s-6 {
+  background-color: var(--blue);
+  height: 350px;
+}
+
+#s-6 .wrapper-standard {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#s-6 .block-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#s-6 .block-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* / s-6 ------------------------------------------------------ */
+
+/*  s-7 ------------------------------------------------------ */
+
+#s-7 {
+  height: fit-content;
+}
+#s-7 .wrapper-standard {
+}
+
+#s-7 .question-container {
+  border-top: 2px solid gray;
+  height: 100px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* / s-7 ------------------------------------------------------ */
+
+footer {
+  background-color: rgb(211, 211, 211);
+}
+
+#s-8 {
+  height: 400px;
+}
+
+#s-8 .wrapper--plus {
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+}
+#s-8 .column {
+  width: calc(100% / 6);
+  display: flex;
+  flex-direction: column;
+}
+
+#s-8 .language {
+  width: 100%;
+}
