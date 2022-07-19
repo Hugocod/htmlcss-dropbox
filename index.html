@@ -11,6 +11,13 @@
       src="https://kit.fontawesome.com/710259c6f3.js"
       crossorigin="anonymous"
     ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Noto+Sans:wght@100;500;600;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -25,15 +32,15 @@
         <a>link</a>
 
         <div class="block-right__button">
-          <button>Accedi</button>
-          <button>Accedi</button>
+          <button class="btn-transparent-mini">Accedi</button>
+          <button class="btn-1-mini">Inizia</button>
         </div>
       </div>
     </header>
 
     <div id="s-1" class="section s-1">
       <div class="wrapper-standard wrapper--plus">
-        <h1 class="big-title">
+        <h1 class="text-1">
           Tutto ciò che ti serve per il lavoro in un unico posto
         </h1>
         <div class="block">
@@ -41,12 +48,11 @@
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam,
               earum deleniti. Exercitationem nesciunt, recusandae alias quam
-              necessitatibus obcaecati facilis consequuntur, harum ipsa cum
-              blanditiis delectus dolorem, libero laudantium sapiente sequi!+
+              necessitatibus obcaecati facilis consequuntur.
             </p>
-            <button>annulla</button>
+            <button class="btn-1">Inizia la prova gratuita</button>
 
-            <h3></h3>
+            <p>Annulla in qualsiasi momento</p>
 
             <i class="fa-solid fa-arrow-down"></i>
           </div>
@@ -60,20 +66,212 @@
 
     <div id="s-2" class="section">
       <div class="wrapper-standard">
-        <h1>Trova il piano business che fa per te</h1>
+        <h1 class="text-2">Trova il piano business che fa per te</h1>
 
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-        <label for="vehicle1"> I have a bike</label>
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-        <label for="vehicle2"> I have a car</label>
+        <input type="checkbox" id="fatturazione mensile" name="fatturazione mensile" value="fatturazione mensile" />
+        <label for="fatturazione mensile">Fatturazione mensile</label>
+        <input type="checkbox" id="Fatturazione annuale" name="Fatturazione annuale" value="Fatturazione annuale" />
+        <label for="Fatturazione annuale">Fatturazione annuale</label>
 
         <div class="block-up">
-          <div class="block-up__card"></div>
-          <div class="block-up__card"></div>
-          <div class="block-up__card"></div>
+          <div class="block-up__card">
+            <div class="mini-head">
+              <i class="fa-solid fa-user"></i>
+              <h6>Singolo</h6>
+            </div>
+
+            <div class="head">
+              <h2 class="text-6">Professional</h2>
+              <h6 class="text-7">12 euro</h6>
+              <h6 class="text-8">/mese</h6>
+            </div>
+
+            <div class="row-container">
+              <div class="row">
+                <i class="fa-solid fa-user"></i>
+                <h3 class="text-8"">1 utente</h3>
+              </div>
+              <div class="row">
+                <i class="fa-solid fa-folder"></i>
+                <h3 class="text-8"">5 TB di spazio di archiviazione sicuro</h3>
+              </div>
+              <div class="row">
+                <i class="fa-solid fa-share-nodes"></i>
+                <h3 class="text-8"">Funzioni di produttività premium e condivisione semplice e sicure</h3>
+              </div>
+            </div>
+
+            <div class="cta">
+              <button class="btn-1">Prova gratis per 30 giorni</button>
+              <div>
+                <h6 class="text-8">oppure 
+                  <a class="text-link-1"> acquista ora</a>
+                </h6>
+              </div>
+            </div>
+
+            <div class="row-container">
+              <div class="row">
+                <h3 class="text-9"">Punti Salienti del piano</h3>
+              </div>
+              <div class="row">
+                <i class="fa-solid fa-check"></i>
+                <h3 class="text-8"">Invia file fino a 100gb con Dropbox transfert</h3>
+              </div>
+
+              <div class="row">
+                <i class="fa-solid fa-check"></i>
+                <h3 class="text-8"">Cartelle offline su dispositivi mobili</h3>
+              </div>
+            </div>
+          </div>
+          <div class="block-up__card">
+            <div class="mini-head">
+              <i class="fa-solid fa-people-group"></i>
+              <h6>Team</h6>
+            </div>
+
+            <div class="head">
+              <h2 class="text-6">Advanced</h2>
+              <h6 class="text-7">12 euro</h6>
+              <h6 class="text-8">/mese</h6>
+            </div>
+
+            <div class="row-container">
+              <div class="row">
+                <i class="fa-solid fa-user"></i>
+                <h3 class="text-8"">1 utente</h3>
+              </div>
+              <div class="row">
+                <i class="fa-solid fa-folder"></i>
+                <h3 class="text-8"">5 TB di spazio di archiviazione sicuro</h3>
+              </div>
+              <div class="row">
+                <i class="fa-solid fa-share-nodes"></i>
+                <h3 class="text-8"">Funzioni di produttività premium e condivisione semplice e sicure</h3>
+              </div>
+            </div>
+
+            <div class="cta">
+              <button class="btn-1">Prova gratis per 30 giorni</button>
+              <div>
+                <h6 class="text-8">oppure 
+                  <a class="text-link-1"> acquista ora</a>
+                </h6>
+              </div>
+            </div>
+
+            <div class="row-container">
+              <div class="row">
+                <h3 class="text-9"">Punti Salienti del piano</h3>
+              </div>
+              <div class="row">
+                <i class="fa-solid fa-check"></i>
+                <h3 class="text-8"">Invia file fino a 100gb con Dropbox transfert</h3>
+              </div>
+
+              <div class="row">
+                <i class="fa-solid fa-check"></i>
+                <h3 class="text-8"">Cartelle offline su dispositivi mobili</h3>
+              </div>
+
+              <div class="row">
+                <i class="fa-solid fa-check"></i>
+                <h3 class="text-8"">Cartelle offline su dispositivi mobili</h3>
+              </div>
+
+              <div class="row">
+                <i class="fa-solid fa-check"></i>
+                <h3 class="text-8"">Cartelle offline su dispositivi mobili</h3>
+              </div>
+
+              <div class="row">
+                <i class="fa-solid fa-check"></i>
+                <h3 class="text-8"">Cartelle offline su dispositivi mobili</h3>
+              </div>
+            </div>
+          </div>
+          <div class="block-up__card">
+            <div class="mini-head">
+              <i class="fa-solid fa-building"></i>
+              <h6>Azienda</h6>
+            </div>
+
+            <div class="head">
+              <h2 class="text-6">Enterprise</h2>
+              <h6 class="text-7">12 euro</h6>
+              <h6 class="text-8">/mese</h6>
+            </div>
+
+            <div class="row-container">
+              <div class="row">
+                <i class="fa-solid fa-user"></i>
+                <h3 class="text-8"">1 utente</h3>
+              </div>
+              <div class="row">
+                <i class="fa-solid fa-folder"></i>
+                <h3 class="text-8"">5 TB di spazio di archiviazione sicuro</h3>
+              </div>
+              <div class="row">
+                <i class="fa-solid fa-share-nodes"></i>
+                <h3 class="text-8"">Funzioni di produttività premium e condivisione semplice e sicure</h3>
+              </div>
+            </div>
+
+            <div class="cta">
+              <button class="btn-1">Prova gratis per 30 giorni</button>
+              <div>
+                <h6 class="text-8">oppure 
+                  <a class="text-link-1"> acquista ora</a>
+                </h6>
+              </div>
+            </div>
+
+            <div class="row-container">
+              <div class="row">
+                <h3 class="text-9"">Punti Salienti del piano</h3>
+              </div>
+              <div class="row">
+                <i class="fa-solid fa-check"></i>
+                <h3 class="text-8"">Invia file fino a 100gb con Dropbox transfert</h3>
+              </div>
+
+              <div class="row">
+                <i class="fa-solid fa-check"></i>
+                <h3 class="text-8"">Cartelle offline su dispositivi mobili</h3>
+              </div>
+
+              <div class="row">
+                <i class="fa-solid fa-check"></i>
+                <h3 class="text-8"">Cartelle offline su dispositivi mobili</h3>
+              </div>
+            </div>
+          </div>
+
+         
         </div>
 
-        <div class="block-down"></div>
+        <div class="block-down">
+          <div class="mini-head">
+            <i class="fa-solid fa-building"></i>
+            <h6>Team</h6>
+          </div>
+
+          <div>
+            <h2 class="text-6">Enterprise</h2>
+            <h6 class="text-9">Contatta l'ufficio vendite per i prezzi</h6>
+
+            <p class="text-8">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Explicabo suscipit voluptates.
+            </p>
+
+          </div>
+
+          <div>
+            <button class="btn-1">contatta l'ufficio vendite</button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -81,7 +279,7 @@
       <div class="wrapper-standard">
         <div class="block-left"></div>
         <div class="block-right">
-          <h1>lorem lorem lorem</h1>
+          <h1 class="text-6">Entra in contatto con partner Dropbox</h1>
 
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
@@ -89,85 +287,79 @@
             Numquam, maiores ullam. Dicta, repellat. Voluptates enim omnis
             doloribus nobis atque.
           </p>
-          <button>ciao</button>
+          <button class="btn-3">Trova un partner</button>
         </div>
       </div>
     </div>
 
     <div id="s-4" class="section">
       <div class="wrapper-standard">
-        <h1>lorem ipsum lorem lorem</h1>
+        <h1 class="text-2">Esegui più operazioni con Dropbox Business</h1>
 
         <div class="card-container">
           <div class="card-box">
             <div class="card">
-              <img src="dropbox_img/img/business-feature-multi-device.png" />
-              <h1>Passa di meno da uno strumento all'altro</h1>
+              <img src="dropbox_img/img/business-feature-switching-tools.png" />
+              <h1 class="text-5">Passa di meno da uno strumento all'altro</h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Obcaecati commodi amet voluptatum. Ut eos consequatur voluptate
-                quae, placeat beatae accusantium illo quidem sapiente provident
-                vero, ipsam, obcaecati natus necessitatibus expedita.
+                quae, placeat beatae accusantium illo.
+              </p>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="card">
+              <img src="dropbox_img/img/business-feature-send-files-it.png" />
+              <h1 class="text-5">Passa di meno da uno strumento all'altro</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Obcaecati commodi amet voluptatum. Ut eos consequatur voluptate
+                quae, placeat beatae accusantium illo.
+              </p>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="card">
+              <img src="dropbox_img/img/business-feature-coordinate-it.png" />
+              <h1 class="text-5">Passa di meno da uno strumento all'altro</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Obcaecati commodi amet voluptatum. Ut eos consequatur voluptate
+                quae, placeat beatae accusantium illo.
+              </p>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="card">
+              <img src="dropbox_img/img/business-feature-integrations-it.png" />
+              <h1 class="text-5">Passa di meno da uno strumento all'altro</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Obcaecati commodi amet voluptatum. Ut eos consequatur voluptate
+                quae, placeat beatae accusantium illo.
               </p>
             </div>
           </div>
           <div class="card-box">
             <div class="card">
               <img src="dropbox_img/img/business-feature-multi-device.png" />
-              <h1>Passa di meno da uno strumento all'altro</h1>
+              <h1 class="text-5">Passa di meno da uno strumento all'altro</h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Obcaecati commodi amet voluptatum. Ut eos consequatur voluptate
-                quae, placeat beatae accusantium illo quidem sapiente provident
-                vero, ipsam, obcaecati natus necessitatibus expedita.
+                quae, placeat beatae accusantium illo.
               </p>
             </div>
           </div>
           <div class="card-box">
             <div class="card">
-              <img src="dropbox_img/img/business-feature-multi-device.png" />
-              <h1>Passa di meno da uno strumento all'altro</h1>
+              <img src="dropbox_img/img/business-feature-security.png" />
+              <h1 class="text-5">Passa di meno da uno strumento all'altro</h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Obcaecati commodi amet voluptatum. Ut eos consequatur voluptate
-                quae, placeat beatae accusantium illo quidem sapiente provident
-                vero, ipsam, obcaecati natus necessitatibus expedita.
-              </p>
-            </div>
-          </div>
-          <div class="card-box">
-            <div class="card">
-              <img src="dropbox_img/img/business-feature-multi-device.png" />
-              <h1>Passa di meno da uno strumento all'altro</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Obcaecati commodi amet voluptatum. Ut eos consequatur voluptate
-                quae, placeat beatae accusantium illo quidem sapiente provident
-                vero, ipsam, obcaecati natus necessitatibus expedita.
-              </p>
-            </div>
-          </div>
-          <div class="card-box">
-            <div class="card">
-              <img src="dropbox_img/img/business-feature-multi-device.png" />
-              <h1>Passa di meno da uno strumento all'altro</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Obcaecati commodi amet voluptatum. Ut eos consequatur voluptate
-                quae, placeat beatae accusantium illo quidem sapiente provident
-                vero, ipsam, obcaecati natus necessitatibus expedita.
-              </p>
-            </div>
-          </div>
-          <div class="card-box">
-            <div class="card">
-              <img src="dropbox_img/img/business-feature-multi-device.png" />
-              <h1>Passa di meno da uno strumento all'altro</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Obcaecati commodi amet voluptatum. Ut eos consequatur voluptate
-                quae, placeat beatae accusantium illo quidem sapiente provident
-                vero, ipsam, obcaecati natus necessitatibus expedita.
+                quae, placeat beatae accusantium illo.
               </p>
             </div>
           </div>
@@ -177,23 +369,36 @@
 
     <div id="s-5" class="section">
       <div class="wrapper-standard">
-        <h1>Più di 500.000 team utilizzano Dropbox Business</h1>
-        <a>Scopri di piu</a>
+        <h1 class="text-2">Più di 500.000 team utilizzano Dropbox Business</h1>
+        <a class="text-link-1">Scopri di più sui nostri clienti</a>
       </div>
 
       <div class="square-container">
-        <div class="square-box">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="square-box square-flex">
+          <div class="a1"></div>
+          <div class="a2"></div>
+          <div class="a3"></div>
+          <div class="a4"></div>
         </div>
-        <div class="square-box"></div>
+
         <div class="square-box">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <img src="./dropbox_img/img/designit_black.svg" />
+
+          <div class="line"></div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            minus recusandae blanditiis similique accusamus ad.
+          </p>
+
+          <p>Lorem ipsum dolor sit amet</p>
+        </div>
+
+        <div class="square-box square-flex">
+          <div class="a5"></div>
+          <div class="a6"></div>
+          <div class="a7"></div>
+          <div class="a8"></div>
         </div>
       </div>
     </div>
@@ -201,27 +406,33 @@
     <div id="s-6" class="section">
       <div class="wrapper-standard">
         <div class="block-left">
-          <h1>Porta drop nella tua azienda</h1>
+          <h1 class="text-2">Porta Dropbox Business nella tua azienda.</h1>
         </div>
         <div class="block-right">
-          <button>inizia la prova gratuita</button>
+          <button class="btn-2">Inizia la tua prova gratuita</button>
         </div>
       </div>
     </div>
 
     <div id="s-7" class="section">
       <div class="wrapper-standard">
-        <h1>FAQ</h1>
+        <h1 class="text-2">Domande frequenti</h1>
         <div class="question-container">
-          <h1>Questa è la domanda?</h1>
+          <h1 class="text-3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit ?
+          </h1>
           <i class="fa-solid fa-angle-down"></i>
         </div>
         <div class="question-container">
-          <h1>Questa è la domanda?</h1>
+          <h1 class="text-3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit ?
+          </h1>
           <i class="fa-solid fa-angle-down"></i>
         </div>
-        <div class="question-container">
-          <h1>Questa è la domanda?</h1>
+        <div class="question-container question-container--last">
+          <h1 class="text-3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit ?
+          </h1>
           <i class="fa-solid fa-angle-down"></i>
         </div>
       </div>
@@ -231,62 +442,55 @@
       <div id="s-8" class="section">
         <div class="wrapper-standard wrapper--plus">
           <div class="column">
-            <h1>title</h1>
-            <a>risorsa</a>
-            <a>risorsa</a>
-            <a>risorsa</a>
-            <a>risorsa</a>
-            <a>risorsa</a>
-            <a>risorsa</a>
+            <h1 class="text-4">Dropbox</h1>
+            <a class="text-link-2">Risorsa per l'utente</a>
+            <a class="text-link-2">Risorsa per l'utente</a>
+            <a class="text-link-2">Risorsa per l'utente</a>
+            <a class="text-link-2">Risorsa per l'utente</a>
+            <a class="text-link-2">Risorsa per l'utente</a>
           </div>
           <div class="column">
-            <h1>title</h1>
-            <a>risorsa</a>
-            <a>risorsa</a>
-            <a>risorsa</a>
-            <a>risorsa</a>
-            <a>risorsa</a>
-            <a>risorsa</a>
+            <h1 class="text-4">Prodotti</h1>
+            <a class="text-link-2">Risorsa per l'utente</a>
+            <a class="text-link-2">Risorsa per l'utente</a>
+            <a class="text-link-2">Risorsa per l'utente</a>
+            <a class="text-link-2">Risorsa per l'utente</a>
+            <a class="text-link-2">Risorsa per l'utente</a>
           </div>
           <div class="column">
-            <h1>title</h1>
-            <a>risorsa</a>
-            <a>risorsa</a>
-            <a>risorsa</a>
-            <a>risorsa</a>
-            <a>risorsa</a>
-            <a>risorsa</a>
+            <h1 class="text-4">Azienda</h1>
+            <a class="text-link-2">Risorsa per l'utente</a>
+            <a class="text-link-2">Risorsa per l'utente</a>
+            <a class="text-link-2">Risorsa per l'utente</a>
+            <a class="text-link-2">Risorsa per l'utente</a>
+            <a class="text-link-2">Risorsa per l'utente</a>
           </div>
           <div class="column">
-            <h1>title</h1>
-            <a>risorsa</a>
-            <a>risorsa</a>
-            <a>risorsa</a>
-            <a>risorsa</a>
-            <a>risorsa</a>
-            <a>risorsa</a>
+            <h1 class="text-4">Supporto</h1>
+            <a class="text-link-2">Risorsa per l'utente</a>
+            <a class="text-link-2">Risorsa per l'utente</a>
+            <a class="text-link-2">Risorsa per l'utente</a>
+            <a class="text-link-2">Risorsa per l'utente</a>
+            <a class="text-link-2">Risorsa per l'utente</a>
           </div>
           <div class="column">
-            <h1>title</h1>
-            <a>risorsa</a>
-            <a>risorsa</a>
-            <a>risorsa</a>
-            <a>risorsa</a>
-            <a>risorsa</a>
-            <a>risorsa</a>
+            <h1 class="text-4">Community</h1>
+            <a class="text-link-2">Risorsa per l'utente</a>
+            <a class="text-link-2">Risorsa per l'utente</a>
+            <a class="text-link-2">Risorsa per l'utente</a>
+            <a class="text-link-2">Risorsa per l'utente</a>
+            <a class="text-link-2">Risorsa per l'utente</a>
           </div>
-          <div class="column">
-            <h1>title</h1>
-            <a>risorsa</a>
-            <a>risorsa</a>
-            <a>risorsa</a>
-            <a>risorsa</a>
-            <a>risorsa</a>
-            <a>risorsa</a>
-          </div>
+        </div>
+      </div>
 
-          <div class="language">
-            <label for="language">o</label>
+      <div class="wrapper-standard wrapper--plus">
+        <div class="line"></div>
+        <div class="language">
+          <div>
+            <label for="language"
+              ><i class="fa-solid fa-earth-americas"></i
+            ></label>
 
             <select name="language" id="language">
               <option value="italiano">Italiano</option>
