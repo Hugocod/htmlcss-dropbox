@@ -615,6 +615,10 @@ p {
   padding: 20px 0px;
 }
 
+#s-7 .question-container:hover .fa-angle-down {
+  transform: rotate(180deg);
+}
+
 #s-7 .ghost-description {
   width: 80%;
   display: none;
@@ -630,6 +634,7 @@ p {
 
 .fa-angle-down {
   margin-right: 50px;
+  transition: all ease-in-out 0.3s;
 }
 
 #s-7 .last {
