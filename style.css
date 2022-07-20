@@ -78,14 +78,23 @@ che cambiano specifiche proprietà di un elemento lasciando inalterate le altre.
 
 /* /wrapper ------------------------------------------------------ */
 
+/*------------------------------------------------------------- */
+/* header------------------------------------------------------ */
+/*------------------------------------------------------------- */
+
 header {
   height: 80px;
-
-  padding: 0px 20px;
+  width: 100%;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  position: fixed;
+  top: 0;
+  z-index: 100;
+
+  background-color: rgb(255, 255, 255);
 }
 
 header .block-left,
@@ -95,16 +104,27 @@ header .block-right {
   align-items: center;
 
   gap: 40px;
+
+  margin: 0px 20px;
 }
 
 header a {
   color: rgb(0, 0, 0);
+  line-height: 80px;
+}
+
+header a:hover {
+  border-bottom: 3px solid #0061ff;
 }
 
 .fa-arrow-down {
   font-size: 3rem;
   padding-top: 50px;
 }
+/*------------------------------------------------------------- */
+/* / header------------------------------------------------------ */
+/*------------------------------------------------------------- */
+
 /* /s-1 ------------------------------------------------------ */
 
 #s-1 {
@@ -116,7 +136,7 @@ header a {
 }
 
 #s-1 .background {
-  background-color: var(--blue);
+  background-color: #b4d0e7;
 
   position: absolute;
   top: 0;
@@ -352,11 +372,6 @@ p {
   box-shadow: inset 0px 0px 0px 10px currentcolor;
 }
 
-/* #s-5 .square-box-3 > div {
-  width: calc(100% / 2);
-  aspect-ratio: 4/4;
-} */
-
 #s-5 .square-box img {
   width: 50%;
 }
@@ -463,15 +478,21 @@ p {
 
 #s-7 .question-container {
   border-top: 2px solid gray;
-  height: 100px;
+  min-height: 100px;
+  padding: 20px 0px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#s-7 .question-container--last {
-  border-bottom: 2px solid gray;
+#s-7 .ghost-description {
+  width: 80%;
+  display: none;
+}
+
+#s-7 .question-container:hover .ghost-description {
+  display: block;
 }
 
 #s-7 .wrapper-standard > h1 {
@@ -594,26 +615,17 @@ footer .language {
   background-color: #0061ff;
   color: white;
   border: none;
-  padding: 15px 50px;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-
-  font-size: 0.8rem;
-  white-space: nowrap;
-}
-
-.btn-1-mini {
-  background-color: #0061ff;
-  color: white;
-  border: none;
   padding: 10px 30px;
   font: inherit;
   cursor: pointer;
   outline: inherit;
 
-  font-size: 0.8rem;
+  font-size: 1rem;
   white-space: nowrap;
+}
+
+.btn-1:hover {
+  background-color: #679ff9;
 }
 
 .btn-transparent-mini {
@@ -625,7 +637,7 @@ footer .language {
   cursor: pointer;
   outline: inherit;
 
-  font-size: 0.8rem;
+  font-size: 1rem;
   white-space: nowrap;
 }
 
@@ -662,5 +674,3 @@ footer .language {
 }
 
 /*  / helpers -------------------------------------------------------------- */
-
-/* padding */
