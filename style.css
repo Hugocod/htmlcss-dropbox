@@ -311,30 +311,57 @@ p {
   display: flex;
 }
 
-#s-5 .square-box {
+#s-5 .square-box-1,
+.square-box-2,
+.square-box-3 {
   width: calc(100% / 3);
   aspect-ratio: 4/4;
   background-color: #f5f5f5;
-
-  padding: 30px;
 }
 
-#s-5 .square-flex {
+#s-5 .square-box-1,
+.square-box-3 {
   display: flex;
   flex-wrap: wrap;
-  padding: 0px;
 }
 
-#s-5 .square-box > div {
+#s-5 .square-box-2 > div {
+  padding: 50px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+}
+
+#s-5 .square-box-2 > div img {
+  width: 70%;
+}
+
+#s-5 .square-box-1 > div,
+.square-box-3 > div {
+  height: 50%;
+  width: 50%;
+}
+
+#s-5 .square-box-1 > div:hover,
+.square-box-3 > div:hover {
+  color: rgba(255, 255, 255, 0.523);
+  -webkit-box-shadow: inset 0px 0px 0px 10px currentcolor;
+  -moz-box-shadow: inset 0px 0px 0px 10px currentcolor;
+  box-shadow: inset 0px 0px 0px 10px currentcolor;
+}
+
+/* #s-5 .square-box-3 > div {
   width: calc(100% / 2);
   aspect-ratio: 4/4;
-}
+} */
 
 #s-5 .square-box img {
   width: 50%;
 }
 
-#s-5 .square-box .a1 {
+#s-5 .a1 {
   background: url(dropbox_img/img/designit.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -343,49 +370,49 @@ p {
   background-color: #a2d39b;
 }
 
-#s-5 .square-box .a2 {
+#s-5 .a2 {
   background: url(dropbox_img/img/arizona_state_university.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50%;
   background-color: #610a2b;
 }
-#s-5 .square-box .a3 {
+#s-5 .a3 {
   background: url(dropbox_img/img/university_of_florida.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50%;
   background-color: #0093ce;
 }
-#s-5 .square-box .a4 {
+#s-5 .a4 {
   background: url(dropbox_img/img/topps.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50%;
   background-color: #ff1c1c;
 }
-#s-5 .square-box .a5 {
+#s-5 .a5 {
   background: url(dropbox_img/img/world_bicycle_relief.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50%;
   background-color: #d50020;
 }
-#s-5 .square-box .a6 {
+#s-5 .a6 {
   background: url(dropbox_img/img/hearst_corp.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50%;
   background-color: #b4d0e7;
 }
-#s-5 .square-box .a7 {
+#s-5 .a7 {
   background: url(dropbox_img/img/lonely_planet.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50%;
   background-color: #0d2581;
 }
-#s-5 .square-box .a8 {
+#s-5 .a8 {
   background: url(dropbox_img/img/clear_channel.svg);
   background-repeat: no-repeat;
   background-position: center;
