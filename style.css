@@ -6,10 +6,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-
-  font-family: "M PLUS Rounded 1c", sans-serif;
   font-family: "Noto Sans", sans-serif;
 }
 
@@ -86,7 +82,6 @@ p {
 
 .text-8 {
   font-size: 0.9rem;
-
   font-weight: 400;
 }
 
